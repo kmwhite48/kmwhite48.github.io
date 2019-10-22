@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Machines">
+	<meta name="author" content="David McNeely-White">
+	<title>Machines</title>
+	<link href="./static/css/bootstrap.min.css" rel="stylesheet">
+	<link href="//cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css" rel="stylesheet">
+	<link href="./static/css/site.css" rel="stylesheet">
+	<script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.71/jquery.csv-0.71.min.js"></script>
+	<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
+	<script type="text/javascript" charset="utf8" src="./static/js/popper.min.js"></script>
+	<script type="text/javascript" charset="utf8" src="./static/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+
+		<div id='csv-display'>
+		</div>
+
+		<script type="text/javascript" charset="utf8">
+			function generateHtmlTable(header, lines) {
+				var html = '<table id="dtable" class="table table-condensed table-hover table-striped">';
+
+				html += '<thead>';
+				html += '<tr>';
+				$.each(header, function( index, colData ) {
+					html += '<th>';
+					html += colData;
+					html += '</th>';
+				});
+				html += '</tr>';
+				html += '</thead>';
+				html += '<tbody>';
+				$.each(lines, function( index, row ) {
+					html += '<tr>';
+					$.each(row, function( index, colData ) {
+						html += '<td>';
+						html += colData;
+						html += '</td>';
+					});
+					html += '</tr>';
+				});
+				html += '</tbody>';
+				html += '</table>';
+				$('#csv-display').append(html);
+			}	
+
+$.ajax({
+	type: "GET",  
+	url: "/~info/machines",
+	dataType: "text",       
+	success: function(response)  
+	{
+		var lines = response.split('\n');
+		var header = lines[0].match(/\S+/g);
+		header.pop();
+		lines = lines.slice(2, lines.indexOf("LAPTOPS:")-1);
+		var newlines = [];
+		for (i = 0; i < lines.length; i++) {
+			var linematch = lines[i].match(/\S+/g);
+			if (!!linematch && linematch.length > 0 && linematch[0] != "")
+				newlines.push(linematch);
+		}
+		var len = newlines[0].length;
+		for (i = 0; i < newlines.length; i++) {
+			newlines[i] = newlines[i].slice(0, len);
+			if (newlines[i].length < len) {
+				for (j = 0; j < len - newlines[i].length; j++) {
+					newlines[i].push("??")
+				}
+			}
+		}
+		generateHtmlTable(header, newlines);
+		$('#dtable').DataTable( {
+			paging: false
+		} );
+	}   
+});
+
+		</script>
+
+	</body>
+</html>
