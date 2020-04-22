@@ -1,69 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<meta name="description" content="Homepage of David McNeely-White">
-		<meta name="author" content="David McNeely-White">
-		<title>Homepage of David McNeely-White</title>
-		<link href="./static/css/bootstrap.min.css" rel="stylesheet">
-		<link href="./static/css/site.css" rel="stylesheet">
-	</head>
-	<body>
-		<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-		    <a class="navbar-brand" href="#">David McNeely-White</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-		      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-		    	  <ul class="navbar-nav mr-auto">
-		    		  <li class="nav-item">
-		    			  <a class="nav-link" href="#about">About</a>
-		    		  </li>
-		    		  <li class="nav-item">
-		    			  <a class="nav-link" href="#experience">Work Experience</a>
-		    		  </li>
-		    		  <li class="nav-item">
-		    			  <a class="nav-link" href="#education">Education</a>
-		    		  </li>
-		    		  <li class="nav-item">
-		    			  <a class="nav-link" href="#volunteer">Volunteer Work</a>
-		    		  </li>
-		    		  <li class="nav-item">
-		    			  <a class="nav-link" href="#resources">Resources</a>
-		    		  </li>
-		    	  </ul>
-		      </div>
-		 </nav>
-	<main role="main" class="container">
-		<div class="starter-template">
-			<img src="./static/img/profile.png" width="30%" height="30%" class="img-fluid img-thumbnail" style="margin-bottom: 1em"/>
-			<p>Email: <img src="./static/img/email.png"/></p>
-			<h1 class="cover-heading" id="about">About</h1>
-			<p class="lead">I'm a Master's student studying under 
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>David McNeely-White Portfolio</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+  <link href="vendor/academicons/css/academicons.min.css" rel="stylesheet">
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/resume.css" rel="stylesheet">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-164296673-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-164296673-1');
+</script>
+
+
+</head>
+
+<body id="page-top">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+      <span class="d-block d-lg-none">David McNeely-White</span>
+      <span class="d-none d-lg-block">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
+      </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#publications">Publications</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#resources">Resources</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid p-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
+      <div class="w-100">
+        <h1 class="mb-0">David
+          <span class="text-primary">McNeely-White</span>
+        </h1>
+        <div class="subheading mb-5">Colorado State University · 
+          <a href="mailto:david.white.679+website@gmail.com">david.white.679@gmail.com</a>
+        </div>
+		<p class="lead mb-5">
+			I'm a Master's student studying under 
 				<a href="http://www.cs.colostate.edu/~draper/">Dr. Bruce Draper</a>. I'm also a research
 				assistant in the <a href="http://www.cs.colostate.edu/~vision/">CSU Computer Vision</a> Research Group, 
 				co-led by Dr. Draper and <a href="http://www.cs.colostate.edu/~ross/">Dr. Ross Beveridge</a>.
 			</p>
-			<p class="lead">
+			<p class="lead mb-5">
 				My work focuses on understanding convolutional neural network (CNN) feature spaces. 
 				Most recently, we have learned that different networks learn (almost) the same feature space when trained on the same data.
 				This research will be used in the DARPA Active Interpretation of Disparate Alternatives (AIDA) program.
-				In addition, I contribute to the lab's work under the DARPA Communicating with Computers (CwC) program.
-			</p>
-			<p><a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=V7aMByMAAAAJ">Google Scholar Profile</a></p>
-			<p><a href="https://www.linkedin.com/in/david-white-41722172/">LinkedIn</a></p>
-			<p><a href="https://github.com/dwhite54">GitHub</a></p>
-			<h2>Publications</h2>
+				In addition, I contribute to the <a href="https://www.cs.colostate.edu/~draper/CwC.php">lab's work </a>under the DARPA Communicating with Computers (CwC) program. </p>
+		</p>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/david-white-41722172/">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/dwhite54">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=V7aMByMAAAAJ">
+            <i class="ai ai-google-scholar"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="publications">
+		<div class="w-100">
+			<h2 class="mb-5">Publications</h2>
 			<ul>
 				<li>D. McNeely-White. 
 					<a href="pubs/thesis.pdf">Same Data, Same Features: Modern ImageNet-Trained Convolutional Neural Networks Learn the Same Thing (Unpublished master's thesis).</a>
 					Colorado State University, Fort Collins, CO.</li>
 				<li>
-				Krishnaswamy, N., Narayana, P., Bangar, R., Rim, K., Patil, D., McNeely-White, D.,
-Ruiz, J., Draper, B., Beveridge, R., and Pustejovsky, J. (2020). Diana’s World: A Situated Multimodal Interactive Agent. In AAAI Conference on Artificial Intelligence (AAAI):
-Demos Program. AAAI.
+					Krishnaswamy, N., Narayana, P., Bangar, R., Rim, K., Patil, D., McNeely-White, D.,
+					Ruiz, J., Draper, B., Beveridge, R., and Pustejovsky, J. (2020). <u>Diana’s World: A Situated Multimodal Interactive Agent.</u> In AAAI Conference on Artificial Intelligence (AAAI):
+					Demom. AAAI.
 				</li>
 				<li>D. McNeely-White, F. Ortega, R. Beveridge, B. Draper, R. Bangar, D. Patil, J. Pustejovsky, N. Krishnaswamy, K. Rim, J. Ruiz, I. Wang. 
 					<a href="pubs/mcneely_hcc2019.pdf">User-Aware Shared Perception for Embodied Agents.</a>
@@ -73,9 +134,9 @@ Demos Program. AAAI.
 					Cognitive Systems Research, 2020. 
 					(<a href="pubs/mcneely_csr2019.pdf">preprint</a>)
 				</li>
-					<ul>
-						<li>This is a longer version of the paper below.</li>
-					</ul>
+				<ul>
+					<li>This is a longer version of the paper below.</li>
+				</ul>
 				<li>D. McNeely-White, R. Beveridge and B. Draper. <a href="pubs/mcneely_bica2019.pdf">Inception and Resnet: Same Training, Same Features.</a> Proceedings of Biologically Inspired Cognitive Architectures 2019, Seattle, WA, Aug. 16-18, 2019. Springer-Verlag, A. Samsonovich (ed).</li>
 				<li>S. Mukherjee, N. Cain, J. Walker, D. White, I. Ray and I. Ray. <a href="pubs/mukherjee_2017.pdf">POSTER: PenJ1939: An Interactive Framework for Design and Dissemination of Exploits for Commercial Vehicles.</a> 24th ACM SIGSAC Conference on Computer and Communications Security (CCS) 2017, Dallas, TX, Oct. 30-Nov 3, 2017.</li>
 			</ul>
@@ -88,70 +149,313 @@ Demos Program. AAAI.
 				</li>
 				<li>O. Rios, W. Tenhaeff, M. McGuire, P. Menchhofer, A. Johs, K. More, D. White <a href="pubs/rios_2012.pdf">Carbon Nanotube Enhanced Functional Carbon Fibers from Renewable Resources.</a> Honolulu PRiME 2012, Oct. 7-12, 2012.</li>
 			</ul>
-			<h2 class="cover-heading" id="experience">Work Experience</h2>
-			<ul>
-				<li>
-					<h3>2018-Present | Colorado State University</h3>
-					<p>Graduate Research Assistant</p>
-				</li>
-				<li>
-					<h3>2017-2018 | Colorado State University</h3>
-					<p>Graduate Teaching Assistant</p>
-				</li>
-				<li>
-					<h3>2016-2017 | Focus on Therapeutic Outcomes, Inc</h3>
-					<p>Mid .NET Developer</p>
-				</li>
-				<li>
-					<h3>2014-2016 | Pilot Travel Centers, LLC</h3>
-					<p>Junior .NET Developer</p>
-				</li>
-				<li>
-					<h3>2013-2014 | Joint Institute for Computational Sciencs (Univ. TN)</h3>
-					<p>Research (HPC) Intern</p>
-				</li>
-				<li>
-					<h3>2012-2013 | Maryville College</h3>
-					<p>Teaching/Laboratory Assistant</p>
-				</li>
-				<li>
-					<h3>2011-2012 | Oak Ridge National Laboratory</h3>
-					<p>Research (Materials Science) Intern</p>
-				</li>
-			</ul>
-			<h2 class="cover-heading" id="education">Education</h2>
-			<ul>
-				<li>
-					<h3>2017-Present | Colorado State University</h3>
-					<p>Master of Science in Computer Science</p>
-				</li>
-				<li>
-					<h3>2010-2014 | Maryville College</h3>
-					<p>Bachelor of Arts in Computer Science</p>
-				</li>
-			</ul>
-			<h2 class="cover-heading" id="volunteer">Volunteer Work</h2>
-			<ul>
-				<li>
-					<p>See <a href="https://www.linkedin.com/in/david-white-41722172/">LinkedIn</a></p>
-				</li>
-			</ul>
-			<h2 class="cover-heading" id="resources">Resources</h2>
-			<p class="lead">
-				<p>
-					<a href="InceptionNetworkOverview.pdf">Inception-v1 through v4 overview slides</a>
-				<p>
-				</p>
-					<a href="inception-v4-demo.tgz">Guided Inception-v4 demo using TensorFlow</a>
-				</p>
-				</p>
-					<a href="machines.html">CS Dept Machines Table</a>
-				</p>
-			</p>
 		</div>
-	</main>
-<script src="./static/js/jquery-3.3.1.slim.min.js"></script>
-<script src="./static/js/popper.min.js"></script>
-<script src="./static/js/bootstrap.min.js"></script>
+	</section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
+      <div class="w-100">
+        <h2 class="mb-5">Experience</h2>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+          <div class="resume-content">
+            <h3 class="mb-0">Graduate Research Assistant</h3>
+            <div class="subheading mb-3">Colorado State University</div>
+			<p>I co-developed, maintained, presented, and published a multi-modal virtual assistant
+named Diana. I focused on gesture recognition, user perception, and performance
+optimization (C#, Python 3, Unity engine, TensorFlow, MS Kinect, funded by DARPA CwC).
+			</p><p>
+I collaborated with CU-Boulder and Brandeis Univ. on the creation of a multi-model
+embedding-based knowledge base for participation in the DARPA AIDA program. My chief
+contribution was the extension of my MS thesis work to facilitate cross-CNN face
+identification and correlation (Python 3, TensorFlow, Java).
+			</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">May 2018 - </span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+          <div class="resume-content">
+            <h3 class="mb-0">Graduate Teaching Assistant</h3>
+            <div class="subheading mb-3">Colorado State University</div>
+			<p>
+			Beyond grading, proctoring, and occasional lecturing, I taught small workshop-style labs
+and provided regular one-on-one instruction. The classes I assisted were intermediate C++
+programming and advanced DBMS. At the end of the first class, one particular student told
+me they “couldn’t have done it without me.”
+			</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">August 2017 - May 2018</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+          <div class="resume-content">
+            <h3 class="mb-0">Freelance Developer</h3>
+            <div class="subheading mb-3">Child Development Research Group (Univ. of TN)</div>
+			<p>
+			I defined, designed, developed and maintained a web app for managing child
+participants and associated parents for the purpose of conducting childhood development
+research (C#, SQL, .NET/MVC, HTML/CSS/JS).
+			</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">May 2016 - January 2020</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+          <div class="resume-content">
+            <h3 class="mb-0">Mid Software Developer</h3>
+            <div class="subheading mb-3">Focus on Therapeutic Outcomes, Inc</div>
+			<p>Working on a small, cross-functional, partially remote team, I co-developed adaptive
+web-based surveys for the purpose of improving patients’ medical outcomes (e.g. pain
+management, mobility). I was known as a powerhouse and always pushed for using modern
+design and development tools. While we all wore many hats, I particularly loved back-end
+optimization and refactoring (C#, SQL, .NET/MVC, HTML/CSS/JS).			</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">January 2016 - July 2017</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+          <div class="resume-content">
+            <h3 class="mb-0">Junior Software Developer</h3>
+            <div class="subheading mb-3">Pilot Corporation</div>
+			<p>
+			I worked on multiple small teams developing console and web applications using .NET/MVC.
+			</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">July 2014 - January 2016</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+          <div class="resume-content">
+            <h3 class="mb-0">Research Intern</h3>
+            <div class="subheading mb-3">Joint Institute for Computational Science (Univ. of TN)</div>
+			<p>
+			I maintained and expanded computational frameworks in support of computational physics research.
+			</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">June 2013 - July 2014</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+          <div class="resume-content">
+            <h3 class="mb-0">Research Intern</h3>
+            <div class="subheading mb-3">Oak Ridge National Laboratory</div>
+			<p>
+			In the Material Science and Technology Department, I assisted with the development of scientific instruments, the processing and analysis of experimental materials, and the proposal and presentation of research (<a href="https://www.maryvillecollege.edu/news/2013/1844/white-completes-15-month-internship-at-ornl/">Article</a>).
+			</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">May 2011 - Sep 2012</span>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
+      <div class="w-100">
+        <h2 class="mb-5">Education</h2>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Colorado State University</h3>
+            <div class="subheading mb-3">Master of Science - Computer Science</div>
+			<p>Coursework includes computer vision, machine learning, AI, and distributed systems.</p>
+            <p>GPA: 3.97</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">August 2017 - May 2020</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Maryville College</h3>
+            <div class="subheading mb-3">Bachelor of Arts - Computer Science</div>
+			<p>Including most of a Chemical Physics degree.</p>
+            <p>GPA: 3.71</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">August 2010 - May 2014</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
+      <div class="w-100">
+        <h2 class="mb-5">Skills</h2>
+
+        <div class="subheading mb-3">Programming Languages</div>
+        <ul class="list-inline">
+          <li class="list-inline-item">
+			  <b>Very Comfortable</b>
+          </li>
+          <li class="list-inline-item">
+			  Python 3
+          </li>
+          <li class="list-inline-item">
+			  C#
+          </li>
+          <li class="list-inline-item">
+			  SQL
+          </li>
+        </ul>
+        <ul class="list-inline">
+          <li class="list-inline-item">
+			  <b>Still Learning</b>
+          </li>
+          <li class="list-inline-item">
+			  C++
+          </li>
+          <li class="list-inline-item">
+			  Java
+          </li>
+        </ul>
+
+        <div class="subheading mb-3">Programming Tools</div>
+        <ul class="list-inline">
+          <li class="list-inline-item">
+			  <b>Very Comfortable</b>
+          </li>
+          <li class="list-inline-item">
+			  TensorFlow
+          </li>
+          <li class="list-inline-item">
+			  Jupyter
+          </li>
+          <li class="list-inline-item">
+			  NumPy
+          </li>
+          <li class="list-inline-item">
+			  Matplotlib
+          </li>
+          <li class="list-inline-item">
+			  Git
+          </li>
+          <li class="list-inline-item">
+			  *NIX terminal environments
+          </li>
+          <li class="list-inline-item">
+			  .NET
+          </li>
+          <li class="list-inline-item">
+			  HTML/CSS/JS
+          </li>
+        </ul>
+        <ul class="list-inline">
+          <li class="list-inline-item">
+			  <b>Still Learning</b>
+          </li>
+          <li class="list-inline-item">
+			  OpenCV
+          </li>
+          <li class="list-inline-item">
+			  Unity Engine
+          </li>
+          <li class="list-inline-item">
+			  Hadoop
+          </li>
+          <li class="list-inline-item">
+			  HDFS
+          </li>
+        </ul>
+	  <div class="subheading mb-3">Workflow</div>
+        <ul class="fa-ul mb-0">
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Writing &amp; Presenting Research
+		  </li>
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Agile Development &amp; Scrum</li>
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Cross Functional Teams</li>
+        </ul>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
+      <div class="w-100">
+        <h2 class="mb-5">Interests</h2>
+        <p>
+		My near-term goal is to work in industry solving problems using cutting-edge research and tools. I'm most interested in machine learning and computer vision, but I'm also excited by problems relating to high-performance, distributed systems.
+		</p>
+        <p>When the weather is good, I enjoy camping and cycling here in Colorado, and restoring old motorcycles. Otherwise, you can find me inside tinkering with electronics and following/playing eSports.
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="awards">
+      <div class="w-100">
+        <h2 class="mb-5">Recognitions</h2>
+        <ul class="fa-ul mb-0">
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            Outstanding Research - BICA Society</li>
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            ACM President - Maryville College (2 yrs)
+		  </li>
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            First Stand - Maryville Community Orchestra
+		  </li>
+        </ul>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="resources">
+      <div class="w-100">
+        <h2 class="mb-5">Resources</h2>
+		<p>
+		<a href="InceptionNetworkOverview.pdf">Inception-v1 through v4 overview slides</a>
+		<p>
+		</p>
+		<a href="inception-v4-demo.tgz">Guided Inception-v4 demo using TensorFlow (v1 and slim)</a>
+		</p>
+		</p>
+		<a href="machines.html">CS Dept Machines Table</a>
+		</p>
+      </div>
+    </section>
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/resume.min.js"></script>
+
 </body>
+
 </html>
